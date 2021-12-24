@@ -1,0 +1,29 @@
+:root {
+    --ff-primary:  'Raleway', sans-serif;
+    
+    --fw-reg: 400;
+    --fw-bold: 800;
+    
+    --clr-back: #F2F2F2;
+    /* --clr-back-overlay: #2D2D2D; */
+    --clr-primary: #0065FC;
+    --clr-secondary: #DEEBFF;
+    /* --clr-secondary-opacity: rgba(3, 218, 197, 0.7);
+    --clr-on-back: #fff;
+    --clr-on-prim: #000000; */
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+html,
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+}
+
