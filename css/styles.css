@@ -1,29 +1,77 @@
 :root {
     --ff-primary:  'Raleway', sans-serif;
     
-    --fw-reg: 400;
+    --fw-reg: 500;
     --fw-bold: 800;
     
     --clr-back: #F2F2F2;
-    /* --clr-back-overlay: #2D2D2D; */
+
     --clr-primary: #0065FC;
     --clr-secondary: #DEEBFF;
-    /* --clr-secondary-opacity: rgba(3, 218, 197, 0.7);
-    --clr-on-back: #fff;
-    --clr-on-prim: #000000; */
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
-    
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 html,
 body {
-    margin: 0;
+    margin: 0 1em;
     font-family: var(--ff-primary);
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hardBlue);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Header and Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    height: 90px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin: 0;
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+}
+
+nav ul li:hover {
+    border-top: 3px var(--clr-primary) solid;
+    color: var(--clr-primary)
+}
+
+.logo img {
+    width: 97px;
+    margin: 20px 0;
+}
