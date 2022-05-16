@@ -52,6 +52,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 16px;
 
   @include media-max(768px) {
     flex-direction: column;
