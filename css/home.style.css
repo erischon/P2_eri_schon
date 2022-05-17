@@ -142,8 +142,7 @@ input:focus {
   /*=============== SEARCH SECTION ===============*/
 
   .search {
-    margin: 0 24px;
-    /* background-color: aqua; */
+    margin: 16px 24px;
   }
 
   .search h2 {
@@ -152,8 +151,9 @@ input:focus {
 
   .searchBox {
     display: flex;
+    justify-content: center;
     margin-bottom: 24px;
-    position: relative;
+    /* position: relative; */
   }
 
   .form__icon {
@@ -169,15 +169,15 @@ input:focus {
   .form__input--icon {
     display: block;
     background-color: var(--clr-primary);
-    /* padding: 16px; */
     border: solid 1px #fff;
+    height: 58px;
+    width: 58px;
     border-radius: 16px;
     color: #fff;
     font-size: 16px;
+    /* padding: 16px; */
     /* position: absolute; */
-    right: 10%;
-    height: 58px;
-    width: 58px;
+    /* right: 10%; */
   }
 
   .form__input--button {
