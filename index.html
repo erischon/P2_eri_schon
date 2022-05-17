@@ -20,7 +20,13 @@
   <body>
     <header class="header container">
       <div class="header__logo">
-        <img src="images/logo/booki.png" alt="Booki" />
+        <picture>
+          <source
+            srcset="images/logo/booki@3x.png"
+            media="(min-width: 992px)"
+          />
+          <img src="images/logo/booki.png" alt="Booki" />
+        </picture>
       </div>
       <nav class="nav">
         <ul class="nav__list">
