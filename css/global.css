@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap");
+
 :root {
   --ff-primary: "Raleway", sans-serif;
 
@@ -5,9 +7,9 @@
   --fw-bold: 800;
 
   --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
+  --fs-h2: 18px;
   --fs-h3: 1.25rem;
-  --fs-body: 1rem;
+  --fs-body: 16px;
 
   --clr-primary: #0065fc;
   --clr-secondary: #deebff;
@@ -27,6 +29,13 @@ body {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -39,4 +48,29 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.container {
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+/*=============== For tablet devices ===============*/
+
+@media screen and (max-width: 992px) {
+}
+
+/*=============== For mobile devices ===============*/
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
