@@ -42,13 +42,57 @@
 /*=============== SEARCH SECTION ===============*/
 
 .search {
-  background-color: beige;
+  /* background-color: beige; */
   display: flex;
   flex-direction: column;
 }
 
 .search h2 {
   font-size: var(--fs-h2);
+  margin-bottom: 8px;
+}
+
+.search__subtitle {
+  margin-bottom: 24px;
+}
+
+.searchBox {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.search__form {
+  display: flex;
+}
+
+.form__icon {
+  background-color: var(--clr-back);
+  padding: 16px;
+  border: solid 1px var(--clr-back);
+  border-radius: 16px 0 0 16px;
+}
+
+.form__input--searchBox {
+  border: none;
+  appearance: none;
+  padding: 16px;
+  border: solid 1px var(--clr-back);
+  font-weight: 600;
+}
+
+input,
+input:focus {
+  outline: none;
+}
+
+.form__input--button {
+  display: flex;
+  background-color: var(--clr-primary);
+  padding: 16px;
+  border: solid 1px var(--clr-back);
+  border-radius: 0 16px 16px 0;
+  color: #fff;
+  font-weight: 600;
 }
 
 /*=============== For tablet devices ===============*/
