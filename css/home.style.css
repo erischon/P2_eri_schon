@@ -78,6 +78,8 @@
   padding: 16px;
   border: solid 1px var(--clr-back);
   font-weight: 600;
+  font-size: var(--fs-body);
+  font-family: var(--ff-primary);
 }
 
 input,
@@ -92,7 +94,9 @@ input:focus {
   border: solid 1px var(--clr-back);
   border-radius: 0 16px 16px 0;
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
+  font-size: var(--fs-body);
+  font-family: var(--ff-primary);
 }
 
 /*=============== For tablet devices ===============*/
