@@ -1,0 +1,77 @@
+/*=============== HEADER & NAV ===============*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16px;
+}
+
+.header__logo img {
+  width: 97px;
+  margin: 20px 0;
+}
+
+.nav {
+  height: 90px;
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 0;
+  padding: 0 24px;
+  border-top: 3px solid var(--clr-page);
+}
+
+.nav__list li:hover {
+  border-top: 3px var(--clr-primary) solid;
+  color: var(--clr-primary);
+}
+
+/*=============== For tablet devices ===============*/
+
+@media screen and (max-width: 992px) {
+}
+
+/*=============== For mobile devices ===============*/
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .nav {
+    height: 70px;
+    width: 100%;
+  }
+
+  .nav__list {
+    width: 100%;
+    margin: auto;
+  }
+
+  .nav__list li {
+    width: 100%;
+    padding-bottom: 16px;
+    border-top: 0;
+    border-bottom: 3px solid var(--clr-back);
+  }
+
+  .nav__list li:hover {
+    border-top: 0;
+    border-bottom: 3px var(--clr-primary) solid;
+  }
+}

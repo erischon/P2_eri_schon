@@ -1,14 +1,30 @@
+:root {
+  --ff-primary: "Raleway", sans-serif;
+
+  --fw-reg: 500;
+  --fw-bold: 800;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --clr-primary: #0065fc;
+  --clr-secondary: #deebff;
+  --clr-back: #f2f2f2;
+  --clr-page: #ffffff;
+}
+
 html,
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--ff-primary);
   margin: 0;
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -24,102 +40,3 @@ img {
   width: 100%;
   height: auto;
 }
-
-/* Header and Navigation */
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 16px;
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.header__logo img {
-  width: 97px;
-  margin: 20px 0;
-}
-
-.header .nav {
-  height: 90px;
-}
-
-@media screen and (max-width: 768px) {
-  .header .nav {
-    height: 70px;
-    width: 100%;
-  }
-}
-
-.header .nav__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 400px;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .header .nav__links {
-    width: 100%;
-    margin: auto;
-  }
-}
-
-.header .nav__links li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-  height: 100%;
-  margin-top: 0;
-  border-top: 3px solid #f2f2f2;
-}
-
-@media screen and (max-width: 768px) {
-  .header .nav__links li {
-    width: 100%;
-    border-top: 0;
-    border-bottom: 3px solid #f2f2f2;
-  }
-}
-
-.header .nav__links li:hover {
-  border-top: 3px #0065fc solid;
-  color: #0065fc;
-}
-
-@media screen and (max-width: 768px) {
-  .header .nav__links li:hover {
-    border-top: 0;
-    border-bottom: 3px #0065fc solid;
-  }
-}
-/*# sourceMappingURL=global.css.map */
