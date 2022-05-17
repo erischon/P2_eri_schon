@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 16px;
 }
 
 .header__logo img {
@@ -38,6 +37,18 @@
 .nav__list li:hover {
   border-top: 3px var(--clr-primary) solid;
   color: var(--clr-primary);
+}
+
+/*=============== SEARCH SECTION ===============*/
+
+.search {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+}
+
+.search h2 {
+  font-size: var(--fs-h2);
 }
 
 /*=============== For tablet devices ===============*/
