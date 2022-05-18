@@ -2,7 +2,7 @@
 
 .lodging {
   display: flex;
-  gap: 5%;
+  gap: 3%;
   margin-top: 24px;
 }
 
@@ -10,7 +10,7 @@
 .lodging__right {
   background-color: var(--clr-secondary);
   padding: 40px;
-  border-radius: 45px;
+  border-radius: 25px;
 }
 
 .lodging__left {
@@ -32,37 +32,46 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 16px;
 }
 
 .card__overlay {
   display: flex;
   flex-direction: column;
-  border-radius: 45px;
+  border-radius: 15px;
   background-color: white;
-  width: 33%;
+  width: 31%;
+  margin-bottom: 16px;
   padding: 6px;
-  gap: 8px;
+  -webkit-box-shadow: 2px 2px 10px 0px #f2f2f2;
+  box-shadow: 2px 2px 10px 0px #f2f2f2;
 }
 
 .card__img {
-  border-radius: 45px 45px 0 0;
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
   object-position: 50% 60%;
-  max-height: 130px;
+  max-height: 110px;
 }
 
 .card__info {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin: 16px;
+  gap: 4px;
+  margin: 6px 10px;
 }
 
 .card__info--title {
   font-weight: 600;
+  font-size: var(--fs-body-mob);
 }
 
 .card__info--infos {
+  font-size: 12px;
+}
+
+.card__info--note {
+  font-size: 12px;
 }
 
 .card__info--note .blue {
@@ -81,4 +90,25 @@
 /*=============== For mobile devices ===============*/
 
 @media screen and (max-width: 768px) {
+  .lodging {
+    flex-direction: column;
+  }
+
+  .lodging__right,
+  .lodging__left {
+    width: 100%;
+  }
+
+  .lodging__left {
+    background-color: white;
+    padding: 0 20px;
+  }
+
+  .lodging-left__wrapper {
+    flex-direction: column;
+  }
+
+  .card__overlay {
+    width: 100%;
+  }
 }
