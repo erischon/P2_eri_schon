@@ -22,7 +22,7 @@
 html,
 body {
   font-family: var(--ff-primary);
-  font-size: var(--fs-body);
+  font-size: var(--fs-body-desk);
   margin: 0;
 }
 
