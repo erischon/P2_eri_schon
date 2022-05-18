@@ -1,0 +1,84 @@
+/*=============== LODGING SECTION ===============*/
+
+.lodging {
+  display: flex;
+  gap: 5%;
+  margin-top: 24px;
+}
+
+.lodging__left,
+.lodging__right {
+  background-color: var(--clr-secondary);
+  padding: 40px;
+  border-radius: 45px;
+}
+
+.lodging__left {
+  width: 65%;
+}
+
+.lodging__right {
+  width: 35%;
+}
+
+.lodging__title {
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  margin-bottom: 24px;
+}
+
+.lodging-left__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card__overlay {
+  display: flex;
+  flex-direction: column;
+  border-radius: 45px;
+  background-color: white;
+  width: 33%;
+  padding: 6px;
+  gap: 8px;
+}
+
+.card__img {
+  border-radius: 45px 45px 0 0;
+  object-fit: cover;
+  object-position: 50% 60%;
+  max-height: 130px;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px;
+}
+
+.card__info--title {
+  font-weight: 600;
+}
+
+.card__info--infos {
+}
+
+.card__info--note .blue {
+  color: var(--clr-primary);
+}
+
+.card__info--note .gray {
+  color: var(--clr-back);
+}
+
+/*=============== For tablet devices ===============*/
+
+@media screen and (max-width: 992px) {
+}
+
+/*=============== For mobile devices ===============*/
+
+@media screen and (max-width: 768px) {
+}

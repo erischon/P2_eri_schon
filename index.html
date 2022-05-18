@@ -7,7 +7,9 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/home.style.css" />
+    <link rel="stylesheet" href="css/header.style.css" />
+    <link rel="stylesheet" href="css/search.style.css" />
+    <link rel="stylesheet" href="css/lodging.style.css" />
 
     <script
       src="https://kit.fontawesome.com/72a0969713.js"
@@ -97,13 +99,44 @@
         </div>
       </section>
 
-      <section class="lodging">
+      <section class="lodging container">
         <div class="lodging__left">
-          <h2 class="lodging__title"></h2>
-          <div class="lodging-left__wrapper"></div>
+          <h2 class="lodging__title">Hébergements à Marseille</h2>
+          <div class="lodging-left__wrapper">
+            <div class="card__overlay">
+              <picture>
+                <source
+                  srcset="
+                    images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg
+                  "
+                  media="(min-width: 992px)"
+                />
+                <img
+                  src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                  alt="Auberge La Canebière"
+                  class="card__img"
+                />
+              </picture>
+
+              <div class="card__info">
+                <h3 class="card__info--title">Auberge La Canebière</h3>
+                <p class="card__info--infos">
+                  Nuit à partir de <strong>25€</strong>
+                </p>
+                <span class="card__info--note">
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star blue"></i>
+                  <i class="fas fa-star gray"></i>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="lodging__right">
-          <h2 class="lodging__title"></h2>
+          <h2 class="lodging__title">Hébergements à Marseille</h2>
           <div class="lodging-right__wrapper"></div>
         </div>
       </section>
