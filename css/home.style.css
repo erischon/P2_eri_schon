@@ -67,10 +67,10 @@
 
 .form__icon {
   background-color: var(--clr-back);
-  padding: 24px;
+  padding: 16px 20px;
   border: solid 1px var(--clr-back);
   border-radius: 16px 0 0 16px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .form__input--searchBox {
@@ -91,7 +91,7 @@ input:focus {
 .form__input--button {
   display: flex;
   background-color: var(--clr-primary);
-  padding: 16px;
+  padding: 16px 24px;
   border: solid 1px var(--clr-back);
   border-radius: 0 16px 16px 0;
   color: #fff;
@@ -102,6 +102,63 @@ input:focus {
 
 .form__input--icon {
   display: none;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.filters__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.filterBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 4px var(--clr-back);
+  border-radius: 45px;
+  font-weight: 600;
+  height: 50px;
+}
+
+.filterBox__icon {
+  border-radius: 45px;
+  padding: 16px;
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+  width: 50px;
+}
+
+.filterBox__title {
+  padding: 16px;
+}
+
+.search__result {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.search__result i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px var(--clr-secondary);
+  border-radius: 45px;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  font-size: 14px;
+  color: var(--clr-primary);
 }
 
 /*=============== For tablet devices ===============*/
@@ -183,5 +240,14 @@ input:focus {
   .form__input--button {
     display: none;
     visibility: hidden;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search__result i {
+    font-size: 12px;
   }
 }
