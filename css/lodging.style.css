@@ -9,7 +9,7 @@
 .lodging__left,
 .lodging__right {
   background-color: var(--clr-secondary);
-  padding: 40px;
+  padding: 30px;
   border-radius: 25px;
 }
 
@@ -42,7 +42,7 @@
   border-radius: 15px;
   background-color: white;
   margin-bottom: 16px;
-  /* padding: 4px; */
+  padding: 4px;
   -webkit-box-shadow: 2px 2px 10px 0px #f2f2f2;
   box-shadow: 2px 2px 10px 0px #f2f2f2;
 }
@@ -55,6 +55,10 @@
 .card--right {
 }
 
+picture {
+  display: flex;
+}
+
 .card__img {
   object-fit: cover;
   object-position: 50% 60%;
@@ -63,6 +67,9 @@
 
 .card__img--right {
   border-radius: 15px 0 0 15px;
+  min-height: 0;
+  min-width: 0;
+  justify-content: stretch;
 }
 
 .card__img--left {
@@ -155,8 +162,8 @@
   }
 
   .card__img--right {
-    width: 100px;
+    /* width: 100px;
     height: 120px;
-    max-height: 120px;
+    max-height: 120px; */
   }
 }
