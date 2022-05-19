@@ -52,6 +52,8 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+  min-height: 0;
+  max-height: 0;
 }
 
 .container {
