@@ -45,7 +45,14 @@
   /* flex: 0 1 100%; */
 }
 
-.lodging__title {
+.title__container--right {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title__container--right i {
+  font-size: 22px;
 }
 
 /* Card Box*/
