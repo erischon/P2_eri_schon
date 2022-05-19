@@ -13,7 +13,6 @@
   background-color: var(--clr-secondary);
   padding: 30px;
   border-radius: 25px;
-  background-color: aqua;
 }
 
 .lodging--left {
@@ -39,12 +38,10 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
-  background-color: blue;
 }
 
 .lodging__wrapper--right {
   flex-direction: column;
-  background-color: blueviolet;
   /* flex: 0 1 100%; */
 }
 
