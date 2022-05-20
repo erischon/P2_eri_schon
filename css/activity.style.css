@@ -68,11 +68,14 @@
 
 @media screen and (max-width: 768px) {
   .activity {
+    flex-direction: column;
     margin-top: 20px;
     padding-top: 10px;
+    /* min-height: 100%; */
   }
   .activity__wrapper {
     flex-direction: column;
+    height: min-content;
     /* flex: 1; */
   }
 
@@ -92,7 +95,7 @@
     /* margin: 0; */
     /* padding: 0; */
     width: 100%;
-    min-height: 20vh;
+    /* min-height: 20vh; */
   }
 
   .activity__card picture {
@@ -100,6 +103,6 @@
   }
 
   .activity__card picture img {
-    /* height: 100px; */
+    max-height: 100px;
   }
 }
