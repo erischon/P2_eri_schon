@@ -74,6 +74,9 @@ img {
 @media screen and (max-width: 768px) {
   body {
     font-size: var(--fs-body-mob);
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
   }
 
   .container {
