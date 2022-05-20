@@ -1,0 +1,45 @@
+/*=============== FOOTER ===============*/
+
+.footer {
+  display: flex;
+  gap: 3%;
+  padding: 40px 70px;
+  background-color: var(--clr-secondary);
+}
+
+.footer__left,
+.footer__middle,
+.footer__right {
+  width: 50vw;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer li {
+  list-style: none;
+  margin-bottom: 16px;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+/*=============== For tablet devices ===============*/
+
+@media screen and (max-width: 992px) {
+}
+
+/*=============== For mobile devices ===============*/
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__left,
+  .footer__middle,
+  .footer__right {
+    width: 100%;
+    height: 100px;
+  }
+}
