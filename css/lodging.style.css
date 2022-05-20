@@ -10,7 +10,7 @@
 .lodging--right {
   display: flex;
   flex-direction: column;
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-back);
   padding: 30px;
   border-radius: 25px;
 }
@@ -53,6 +53,11 @@
 
 .title__container--right i {
   font-size: 22px;
+}
+
+.lodging--left a {
+  margin-top: 24px;
+  font-weight: 700;
 }
 
 /* Card Box*/
