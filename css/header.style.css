@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.header picture {
+  display: flex;
+}
+
 .header__logo img {
   width: 97px;
   margin: 20px 0;
