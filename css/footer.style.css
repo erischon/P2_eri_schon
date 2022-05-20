@@ -5,6 +5,7 @@
   gap: 3%;
   padding: 40px 70px;
   background-color: var(--clr-secondary);
+  font-size: 14px;
 }
 
 .footer__left,
