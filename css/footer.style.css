@@ -2,7 +2,7 @@
 
 .footer {
   display: flex;
-  gap: 3%;
+  gap: 5%;
   padding: 40px 70px;
   background-color: var(--clr-secondary);
   font-size: 14px;
@@ -11,7 +11,7 @@
 .footer__left,
 .footer__middle,
 .footer__right {
-  width: 50vw;
+  width: 100%;
 }
 
 .footer ul {
@@ -40,7 +40,11 @@
   .footer__left,
   .footer__middle,
   .footer__right {
-    width: 100%;
-    min-height: 100px;
+    /* min-height: 100px; */
+    margin-bottom: 20px;
+  }
+
+  .footer li {
+    margin-bottom: 8px;
   }
 }
