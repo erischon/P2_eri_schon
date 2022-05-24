@@ -60,6 +60,7 @@
 
 @media screen and (max-width: 992px) {
   .activity__wrapper {
+    height: 50vh;
     gap: 16px;
   }
 }
