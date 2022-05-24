@@ -51,7 +51,11 @@
         <div class="searchBox">
           <form class="search__form">
             <i class="fa-solid fa-location-dot form__icon"></i>
-            <input type="text" class="form__input--searchBox" />
+            <input
+              type="text"
+              class="form__input--searchBox"
+              placeholder="Choisissez une ville"
+            />
             <input
               type="submit"
               value="Rechercher"
@@ -68,30 +72,30 @@
         <div class="filters">
           <h3 class="filters__title">Filtres</h3>
           <div class="filters__container">
-            <div class="filterBox">
-              <div class="filterBox__icon">
+            <div class="filter__button">
+              <div class="filter__icon">
                 <i class="fa-solid fa-money-bill-wave"></i>
               </div>
-              <div class="filterBox__title">Economique</div>
+              <div class="filter__title">Economique</div>
             </div>
 
-            <div class="filterBox">
-              <div class="filterBox__icon">
+            <div class="filter__button">
+              <div class="filter__icon">
                 <i class="fa-solid fa-child-reaching"></i>
               </div>
-              <div class="filterBox__title">Familial</div>
+              <div class="filter__title">Familial</div>
             </div>
 
-            <div class="filterBox">
-              <div class="filterBox__icon">
+            <div class="filter__button">
+              <div class="filter__icon">
                 <i class="fa-solid fa-heart"></i>
               </div>
-              <div class="filterBox__title">Romantique</div>
+              <div class="filter__title">Romantique</div>
             </div>
 
-            <div class="filterBox">
-              <div class="filterBox__icon"><i class="fa-solid fa-dog"></i></div>
-              <div class="filterBox__title">Animaux autorisés</div>
+            <div class="filter__button">
+              <div class="filter__icon"><i class="fa-solid fa-dog"></i></div>
+              <div class="filter__title">Animaux autorisés</div>
             </div>
           </div>
         </div>
@@ -105,7 +109,7 @@
         <div class="lodging--left">
           <h2 class="lodging__title">Hébergements à Marseille</h2>
           <div class="lodging__wrapper lodging__wrapper--left">
-            <div class="card card--left">
+            <a href="#" class="card card--left">
               <picture>
                 <source
                   srcset="
@@ -135,9 +139,9 @@
                   <i class="fas fa-star gray"></i>
                 </span>
               </div>
-            </div>
+            </a>
 
-            <div class="card card--left">
+            <a href="#" class="card card--left">
               <picture>
                 <source
                   srcset="
@@ -167,9 +171,9 @@
                   <i class="fas fa-star blue"></i>
                 </span>
               </div>
-            </div>
+            </a>
 
-            <div class="card card--left">
+            <a href="#" class="card card--left">
               <picture>
                 <source
                   srcset="
@@ -199,9 +203,9 @@
                   <i class="fas fa-star gray"></i>
                 </span>
               </div>
-            </div>
+            </a>
 
-            <div class="card card--left">
+            <a href="#" class="card card--left">
               <picture>
                 <source
                   srcset="
@@ -231,9 +235,9 @@
                   <i class="fas fa-star gray"></i>
                 </span>
               </div>
-            </div>
+            </a>
 
-            <div class="card card--left">
+            <a href="#" class="card card--left">
               <picture>
                 <source
                   srcset="
@@ -263,9 +267,9 @@
                   <i class="fas fa-star gray"></i>
                 </span>
               </div>
-            </div>
+            </a>
 
-            <div class="card card--left">
+            <a href="#" class="card card--left">
               <picture>
                 <source
                   srcset="
@@ -295,7 +299,7 @@
                   <i class="fas fa-star blue"></i>
                 </span>
               </div>
-            </div>
+            </a>
           </div>
           <a href="#">Afficher plus</a>
         </div>
@@ -305,8 +309,9 @@
             <h2 class="lodging__title">Les plus populaires</h2>
             <i class="fa-solid fa-chart-line"></i>
           </div>
+
           <div class="lodging__wrapper lodging__wrapper--right">
-            <div class="card card--right">
+            <a href="#" class="card card--right">
               <picture class="picture--right">
                 <source
                   srcset="
@@ -336,9 +341,9 @@
                   <i class="fas fa-star blue"></i>
                 </span>
               </div>
-            </div>
+            </a>
 
-            <div class="card card--right">
+            <a href="#" class="card card--right">
               <picture class="picture--right">
                 <source
                   srcset="
@@ -370,9 +375,9 @@
                   <i class="fas fa-star gray"></i>
                 </span>
               </div>
-            </div>
+            </a>
 
-            <div class="card card--right">
+            <a href="#" class="card card--right">
               <picture class="picture--right">
                 <source
                   srcset="
@@ -402,7 +407,7 @@
                   <i class="fas fa-star gray"></i>
                 </span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -411,7 +416,7 @@
         <h2>Activités à Marseille</h2>
         <div class="activity__wrapper">
           <div class="activity__column">
-            <div class="activity__card">
+            <a href="#" class="activity__card">
               <picture>
                 <source
                   srcset="
@@ -425,11 +430,11 @@
                 />
               </picture>
               <p>Vieux Port</p>
-            </div>
+            </a>
           </div>
 
           <div class="activity__column">
-            <div class="activity__card activity__card--duo">
+            <a href="#" class="activity__card activity__card--duo">
               <picture>
                 <source
                   srcset="
@@ -443,9 +448,9 @@
                 />
               </picture>
               <p>Fort de Pomègues</p>
-            </div>
+            </a>
 
-            <div class="activity__card activity__card--duo">
+            <a href="#" class="activity__card activity__card--duo">
               <picture>
                 <source
                   srcset="
@@ -459,11 +464,11 @@
                 />
               </picture>
               <p>îles du Frioul</p>
-            </div>
+            </a>
           </div>
 
           <div class="activity__column">
-            <div class="activity__card">
+            <a href="#" class="activity__card">
               <picture>
                 <source
                   srcset="
@@ -477,11 +482,11 @@
                 />
               </picture>
               <p>Parc national des Calanques</p>
-            </div>
+            </a>
           </div>
 
           <div class="activity__column">
-            <div class="activity__card activity__card--duo">
+            <a href="#" class="activity__card activity__card--duo">
               <picture>
                 <source
                   srcset="
@@ -495,9 +500,9 @@
                 />
               </picture>
               <p>Notre-Dame-de-la-Garde</p>
-            </div>
+            </a>
 
-            <div class="activity__card activity__card--duo">
+            <a href="#" class="activity__card activity__card--duo">
               <picture>
                 <source
                   srcset="
@@ -511,7 +516,7 @@
                 />
               </picture>
               <p>Parc Longchamp</p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -521,25 +526,25 @@
       <div class="footer__left">
         <h3>A propos</h3>
         <ul>
-          <li>Fonctionnement du site</li>
-          <li>Conditions générales de vente</li>
-          <li>Données et confidentialité</li>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
         </ul>
       </div>
 
       <div class="footer__middle">
         <h3>Nos Hébergements</h3>
         <ul>
-          <li>Charte qualité</li>
-          <li>Soumettre votre hôtel</li>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Soumettre votre hôtel</a></li>
         </ul>
       </div>
 
       <div class="footer__right">
         <h3>Assistance</h3>
         <ul>
-          <li>Centre d'aide</li>
-          <li>Nous contacter</li>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
         </ul>
       </div>
     </footer>
