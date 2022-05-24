@@ -57,17 +57,26 @@ input:focus {
   font-weight: 800;
   font-size: var(--fs-body);
   font-family: var(--ff-primary);
+  cursor: pointer;
+}
+
+.form__input--button:hover {
+  background-color: white;
+  color: var(--clr-primary);
+  border-color: var(--clr-primary);
 }
 
 .form__input--icon {
   display: none;
+  cursor: pointer;
 }
 
+/* Filters */
 .filters {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   margin-bottom: 24px;
 }
 
@@ -76,10 +85,10 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 20px;
 }
 
-.filterBox {
+.filter__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,9 +96,16 @@ input:focus {
   border-radius: 45px;
   font-weight: 600;
   height: 50px;
+  cursor: pointer;
 }
 
-.filterBox__icon {
+.filter__button:hover,
+.filter__button:focus {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.filter__icon {
   border-radius: 45px;
   padding: 16px;
   background-color: var(--clr-secondary);
@@ -97,7 +113,7 @@ input:focus {
   width: 50px;
 }
 
-.filterBox__title {
+.filter__title {
   padding: 16px;
 }
 
@@ -123,6 +139,10 @@ input:focus {
 /*=============== For tablet devices ===============*/
 
 @media screen and (max-width: 992px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /*=============== For mobile devices ===============*/
@@ -170,11 +190,6 @@ input:focus {
   .form__input--button {
     display: none;
     visibility: hidden;
-  }
-
-  .filters {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .search__result i {
