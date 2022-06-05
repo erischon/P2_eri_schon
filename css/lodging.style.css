@@ -36,7 +36,7 @@
 
 .lodging__wrapper--left {
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 16px;
 }
@@ -68,6 +68,7 @@
   display: flex;
   border-radius: 15px;
   background-color: white;
+
   margin-bottom: 16px;
   padding: 4px;
   -webkit-box-shadow: 2px 2px 10px 0px #cccccc;
@@ -77,6 +78,8 @@
 
 .card--left {
   flex-direction: column;
+  justify-content: space-between;
+
   width: 31%;
 }
 
@@ -99,12 +102,10 @@
 .card__img--right {
   border-radius: 15px 0 0 15px;
   max-height: 130px;
-
-  /* justify-content: stretch; */
 }
 
 .card__img--left {
-  max-height: 110px;
+  min-height: 110px;
   border-radius: 15px 15px 0 0;
 }
 
@@ -161,9 +162,14 @@
     padding: 20px;
   }
 
+  /* .lodging__wrapper--left {
+    flex-direction: column;
+  } */
+
   .card--left {
     flex-direction: column;
     width: 45%;
+    /* width: 100%; */
   }
 }
 
