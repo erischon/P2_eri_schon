@@ -1,7 +1,6 @@
 /*=============== SEARCH SECTION ===============*/
 
 .search {
-  /* background-color: beige; */
   display: flex;
   flex-direction: column;
 }
@@ -85,7 +84,7 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 16px;
 }
 
 .filter__button {
@@ -93,6 +92,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   border: solid 3px var(--clr-back);
+  border-left: 0px;
   border-radius: 45px;
   font-weight: 600;
   height: 50px;
@@ -103,9 +103,17 @@ input:focus {
 .filter__button:focus {
   background-color: var(--clr-primary);
   color: white;
+
+  /* Better animation ? */
+  /* flex-direction: row-reverse; */
+  /* border-right: 0px; */
+  /* border-left: 3px; */
 }
 
 .filter__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 45px;
   padding: 16px;
   background-color: var(--clr-secondary);
@@ -143,6 +151,10 @@ input:focus {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .filters__container {
+    justify-content: flex-start;
+  }
 }
 
 /*=============== For mobile devices ===============*/
@@ -160,7 +172,6 @@ input:focus {
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
-    /* position: relative; */
   }
 
   .form__icon {
@@ -182,9 +193,6 @@ input:focus {
     border-radius: 16px;
     color: #fff;
     font-size: 16px;
-    /* padding: 16px; */
-    /* position: absolute; */
-    /* right: 10%; */
   }
 
   .form__input--button {

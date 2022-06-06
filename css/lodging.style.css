@@ -44,7 +44,6 @@
 .lodging__wrapper--right {
   flex-direction: column;
   gap: 20px;
-  /* flex: 0 1 100%; */
 }
 
 .title__container--right {
@@ -199,11 +198,5 @@
 
   .card {
     width: 100%;
-  }
-
-  .card__img--right {
-    /* width: 100px; */
-    /* height: 120px; */
-    /* max-height: 120px; */
   }
 }

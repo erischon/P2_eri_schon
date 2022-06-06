@@ -72,35 +72,14 @@
     flex-direction: column;
     margin-top: 20px;
     padding-top: 10px;
-    /* min-height: 100%; */
   }
   .activity__wrapper {
     flex-direction: column;
     height: min-content;
-    /* flex: 1; */
-  }
-
-  .activity__column {
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* flex: 0 1 auto; */
-    /* min-height: 40%; */
-    /* background-color: aqua; */
-    /* padding: 0; */
-    /* margin: 0; */
   }
 
   .activity__card {
-    /* min-height: 100%; */
-    /* background-color: antiquewhite; */
-    /* margin: 0; */
-    /* padding: 0; */
     width: 100%;
-    /* min-height: 20vh; */
-  }
-
-  .activity__card picture {
-    /* min-height: 100%; */
   }
 
   .activity__card picture img {
